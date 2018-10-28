@@ -27,9 +27,7 @@ while True:
     cv2.imshow("Camera", frame)
     cv2.imshow("Mask", mask)
 
-    key = cv2.waitKey(1) & 0xFF
-
-    if key == ord("q"):
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 camera.release()
